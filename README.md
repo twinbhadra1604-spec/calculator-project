@@ -1,2 +1,0 @@
-# calculator-project
-My calculator
