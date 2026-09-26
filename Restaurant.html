@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Food Paradise</title>
+
+<style>
+body{
+
+font-family:Arial;
+text-align:center;
+}
+
+h1{
+color:white;
+background:Black;
+padding:15px;
+border-radius:10px;
+}
+
+.menu{
+background:white;
+width:350px;
+margin:auto;
+padding:20px;
+border-radius:15px;
+box-shadow:0 0 10px black;
+}
+
+.item{
+display:flex;
+justify-content:space-between;
+margin:10px;
+padding:10px;
+background:#fff3cd;
+border-radius:8px;
+}
+
+button{
+background:green;
+color:white;
+border:none;
+padding:6px 12px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:darkgreen;
+}
+
+#order{
+background:white;
+width:350px;
+margin:20px auto;
+padding:15px;
+border-radius:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>🍴 Food Paradise Restaurant 🍴</h1>
+
+<div class="menu">
+
+<div class="item">Pizza - ₹250 <button onclick="addItem('Pizza')">Add</button></div>
+
+<div class="item">Burger - ₹120 <button onclick="addItem('Burger')">Add</button></div>
+
+<div class="item">Cheese Momos - ₹150 <button onclick="addItem('Cheese Momos')">Add</button></div>
+
+<div class="item">Veg Momos - ₹100 <button onclick="addItem('Veg Momos')">Add</button></div>
+
+<div class="item">Chicken Momos - ₹180 <button onclick="addItem('Chicken Momos')">Add</button></div>
+
+<div class="item">Egg Roll - ₹90 <button onclick="addItem('Egg Roll')">Add</button></div>
+
+<div class="item">Chicken Egg Roll - ₹130 <button onclick="addItem('Chicken Egg Roll')">Add</button></div>
+
+<div class="item">Aloo Paratha - ₹80 <button onclick="addItem('Aloo Paratha')">Add</button></div>
+
+<div class="item">Cheese Paratha - ₹120 <button onclick="addItem('Cheese Paratha')">Add</button></div>
+
+<div class="item">Chowmein - ₹140 <button onclick="addItem('Chowmein')">Add</button></div>
+
+<div class="item">Pav Bhaji - ₹110 <button onclick="addItem('Pav Bhaji')">Add</button></div>
+
+<div class="item">Dosa - ₹90 <button onclick="addItem('Dosa')">Add</button></div>
+
+<div class="item">Mohito - ₹80 <button onclick="addItem('Mohito')">Add</button></div>
+
+<div class="item">Ice Cream - ₹70 <button onclick="addItem('Ice Cream')">Add</button></div>
+
+</div>
+
+<div id="order">
+<h2>Your Order</h2>
+<p id="orderlist">No items selected.</p>
+<h2> Total Amount: <span id="total"₹0</span></h2>
+<ul id="list"></ul>
+</div>
+
+<script>
+function addItem(food){
+var li=document.createElement("li");
+li.innerHTML=food;
+document.getElementById("list").appendChild(li);
+}
+</script>
+
+</body>
+</html>
